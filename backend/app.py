@@ -21,7 +21,8 @@ except ImportError:
 app = FastAPI(
     title="NYC Taxi Analytics API",
     description="API for exploring taxi trips and predicting duration.",
-    version="1.0.0"
+    version="1.0.0",
+    root_path="/api"
 )
 app.add_middleware(
     CORSMiddleware,
